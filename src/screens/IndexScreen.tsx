@@ -2,11 +2,12 @@ import React from 'react'
 import { Text, StyleSheet, SafeAreaView, View, Button, TouchableHighlight, Image } from 'react-native'
 import { ButtonGame } from './../../src/components/ButtonGame'
 import { ButtonText } from './../../src/components/ButtonText'
+import { Actions } from 'react-native-router-flux'
 
 export const IndexScreen = () => {
 
     const handleClick = () => {
-        console.log("adios");
+        Actions.game();
     }
 
     return (

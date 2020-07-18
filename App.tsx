@@ -1,18 +1,20 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
-/* eslint-disable prettier/prettier */
-// eslint-disable-next-line prettier/prettier
+
 import React from 'react';
 
 
-import { HomeScreen } from './src/screens/HomeScreen';
+import { IndexScreen } from './src/screens/IndexScreen';
+import { RouterApp } from './src/routes/RouterApp';
+import { AppRegistry } from 'react-native';
 
 const App = () => {
   return (
     <>
-      <HomeScreen />
+      <RouterApp />
     </>
   );
 };
 
 
 export default App;
+
+AppRegistry.registerComponent('App', () => App)
